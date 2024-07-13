@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+  color: white;
+  list-style: none;
+}
+::selection{
+  display: none;
+}
+.button,
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-sea-product {
+  width: 100%;
+  /* height: 60px; */
+  background-color: rgb(31, 31, 31);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  width: max-content;
+}
+
+.user-detail img {
+  width: 50px;
+  border: 2px solid yellow;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 6px #d3eb0142;
+}
+
+.user-detail label {
+  font-size: larger;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.search-product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-product input {
+  width: 30vw;
+  color: white !important;
+  background-color: #393939 !important;
+  padding: 9px 10px;
+  border: none !important;
+  border-radius: 30px;
+}
+
+.search-product input::placeholder {
+  color: gray;
+}
+
+.search-product input:focus {
+  box-shadow: 0px 0px 20px 6px rgba(1, 0, 0, 0.142);
+}
+
+.search-product input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  color: white !important;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background-image: url('./assets/clear.svg');
+
+}
+
+.search-product .material-symbols-outlined {
+  padding: 9px;
+  color: white;
+  border-radius: 30px;
+  background-color: #393939;
+}
+
+.search-product .material-symbols-outlined:active {
+  box-shadow: 0px 0px 20px 6px rgba(0, 123, 255, 0.212);
+
+}
+
+
+
+.web-info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.web-info a,
+#a {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+}
+
+.web-info a span,
+.a span {
+  position: absolute;
+  height: 60%;
+  width: 0;
+  z-index: -1;
+  border-bottom: 2px solid rgb(32, 65, 230);
+  transition: 0.3s;
+}
+
+.web-info a:hover,
+.a:hover {
+  color: rgb(32, 65, 230);
+}
+
+.web-info a:hover span,
+.a:hover span {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: #c8781c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0px 40px; */
+}
+
+.logo {
+  background-color: aliceblue;
+  /* border: 3px solid rgb(183, 89, 89); */
+  box-shadow: 0px 0px 9px 2px #2e2a2aa6;
+  display: flex;
+}
+
+.logo .shoes {
+  /* border-right: 3px solid black; */
+  height: 100%;
+  color: aliceblue;
+  padding: 3px 10px;
+  font-size: xx-large;
+  font-weight: bolder;
+  background: linear-gradient(90deg, rgba(140, 2, 213, 1) 0%, rgba(69, 76, 252, 1) 100%);
+}
+
+.logo .marketplace {
+  background: linear-gradient(90deg, rgba(140, 2, 213, 1) 0%, rgba(69, 76, 252, 1) 100%);
+  -webkit-background-clip: text;
+  padding: 2px 10px;
+  font-weight: bolder;
+  font-size: xx-large;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.nav-main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 10px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.nav-main .nav-item {
+  height: 100%;
+  list-style: none;
+  padding: 0px 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.nav-main .nav-item .nav-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+.nav-main .transition {
+  width: 100%;
+  z-index: 1;
+  height: 0%;
+  position: absolute;
+  background-color: #393939;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 7px 20px 1px #060606d6;
+  border-top: 2px solid rgb(255, 255, 255);
+}
+
+.nav-main .nav-item:hover .transition {
+  height: 90%;
+}
+
+
+.menu {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu button {
+  height: 100%;
+}
+
+.dropdown-menu {
+  width: 100% !important;
+  height: 500%;
+  display: none !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background-color: transparent !important;
+  transform: translateY(70px) !important;
+  border-radius: 0 !important;
+  --bs-dropdown-min-width: 0 !important;
+  --bs-dropdown-padding-y: 0 !important;
+  overflow: scroll;
+  --bs-dropdown-zindex: 2 !important;
+  animation: dropdown 0.1s ease-in-out alternate;
+  z-index: 1 !important;
+  --bs-dropdown-border-width: 0 !important;
+  padding: 10px 0px !important;
+  gap: 5px !important;
+}
+
+@keyframes dropdown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+
+}
+
+.dropdown-menu::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.dropdown-menu li {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #5b5b5b;
+}
+
+.profile-menu {
+  transform: translateX(300px);
+  width: 300px;
+  z-index: 10;
+  position: fixed;
+  /* position: absolute; */
+  right: 0;
+  height: 100vh;
+  background-color: #292727;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.profile-menu .profile {
+  padding: 20px 20px;
+  background-color: #515d68;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  width: 50px;
+  border: 2px solid yellow;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 6px #d3eb0142;
+}
+
+.profile .name {
+  font-size: larger;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.account {
+  display: flex;
+  margin-top: 15px;
+  gap: 5px;
+  width: 100%;
+  list-style: none;
+  flex-direction: column;
+}
+
+.account li a,
+#a {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account li a:hover,
+#a:hover {
+  background-color: #AAA;
+}
+
+.close {
+  display: flex;
+  padding: 17px;
+  justify-content: space-between;
+}
+
+a,
+#a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login #a {
+  /* height: 60px; */
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.login ul {
+  width: 110%;
+  display: none;
+  padding: 0px;
+}
+
+.login ul li {
+  width: 100%;
+}
+
+.login ul li a {
+  width: 100%;
+}

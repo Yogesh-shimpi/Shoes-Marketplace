@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+::selection {
+    display: none;
+}
+
+body {
+    background-image: url('./assets/background-image.webp');
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.6);
+    ;
+    backdrop-filter: brightness(0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(250, 181, 32, 0.879);
+    gap: 20px;
+    box-shadow: 0px 0px 20px 4px #0404049c;
+}
+
+.hero .Sign_in {
+    font-size: x-large;
+}
+
+.hero .input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .input input {
+    padding: 10px;
+    color: black;
+    border: none;
+    /* width: 90%; */
+    outline: none;
+    box-shadow: none !important;
+
+}
+
+.material-symbols-outlined {
+    color: black;
+    cursor: pointer;
+}
+
+.remember input {
+    cursor: pointer;
+}
+
+.forget {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.forget .button {
+    background-color: transparent;
+    color: rgb(14, 62, 255);
+    border: none;
+    font-weight: 500;
+}
+
+.submit {
+    border-radius: 5px;
+    color: white !important;
+}
+
+.submit:active {
+    background-color: #AAA;
+}
+
+.sign_up {
+    width: 100%;
+    border: 1px solid #474545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    gap: 10px;
+}
+
+.error {
+    color: #DC3545;
+    margin-left: 3px;
+    height: 18px;
+    font-size: 16;
+    text-align: center;
+    width: fit-content;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 40px;
+    background: radial-gradient(circle, rgba(68, 57, 74, 1) 0%, rgb(41 41 59) 100%)
+}
